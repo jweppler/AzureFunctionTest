@@ -23,7 +23,7 @@ namespace FunctionAppPackageDeploy
             name = name ?? data?.name;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Hello {name}!")
+                ? (ActionResult)new OkObjectResult($"Hello {name}! This is the dev branch.")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }
